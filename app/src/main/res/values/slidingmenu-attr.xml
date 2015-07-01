@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--SlidingMenu自定义属性-->
+
+    <!--菜单完全显示时，内容区域可见的大小-->
+    <attr name="menuOffset" format="dimension" />
+    <!--菜单的显示模式-->
+    <attr name="menuMode" format="enum">
+        <!--菜单在内容左侧-->
+        <enum name="left" value="0"/>
+        <!--菜单在内容下方-->
+        <enum name="behind" value="1" />
+        <!--菜单在内容左侧，滑动时带有渐变、缩放等效果，类似QQ-->
+        <enum name="mix" value="2" />
+    </attr>
+    <!--当模式为mix时，平移、缩放等变化的系数，取值0~1-->
+    <attr name="mixFactor" format="float" />
+    <!--声明属性-->
+    <declare-styleable name="SlidingMenu">
+        <attr name="menuOffset" />
+        <attr name="menuMode" />
+        <attr name="mixFactor"/>
+    </declare-styleable>
+</resources>

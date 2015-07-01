@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yuexunit.slidingmenu.view.SlidingMenu xmlns:android="http://schemas.android.com/apk/res/android"
+                                           xmlns:yx="http://schemas.android.com/apk/res-auto"
+                                           android:layout_width="match_parent"
+                                           android:layout_height="match_parent"
+                                           android:background="@drawable/bg_slidingmenu"
+                                           android:overScrollMode="never"
+                                           android:scrollbars="none"
+                                           yx:menuMode="mix"
+                                           yx:mixFactor="0.6"
+                                           yx:menuOffset="100dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <include
+            layout="@layout/slidingmenu_menu"/>
+
+        <include
+            layout="@layout/slidingmenu_content"/>
+    </LinearLayout>
+</com.yuexunit.slidingmenu.view.SlidingMenu>
